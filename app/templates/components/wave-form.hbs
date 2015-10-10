@@ -1,0 +1,18 @@
+<div>
+  <label for='#sample-rate-input'>Sample Rate</label>
+  <input
+    id="sample-rate-input"
+    type="range"
+    value={{sampleRate}}
+    min="10"
+    max="9000"
+    oninput={{action (mut sampleRatePreview) value='target.value'}}
+    onchange={{action (mut sampleRate) value='target.value'}}>
+  {{sampleRatePreview}}
+</div>
+
+<svg id="waveform" viewBox="0 -1 {{sampleRate}} 2" preserveAspectRatio="none">
+  <g id="waveform">
+    <path d="{{svgPath}}"/>
+  </g>
+</svg>

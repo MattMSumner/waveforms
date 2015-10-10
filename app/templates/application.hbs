@@ -1,3 +1,9 @@
 <h2 id="title">Welcome to Ember</h2>
 
 {{outlet}}
+
+{{file-dropzone setFile=(action 'setFile') file=file}}
+
+{{#if file}}
+  {{wave-form file=file}}
+{{/if}}
