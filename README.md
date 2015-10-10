@@ -1,7 +1,8 @@
 # Waveforms
 
 This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Waveforms is a small application showing how the web audio api can be used to
+draw a svg audio waveform.
 
 ## Prerequisites
 
